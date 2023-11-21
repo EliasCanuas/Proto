@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "12699066657",
+    "firebase_url": "https://lecciones-7f44d-default-rtdb.firebaseio.com",
+    "project_id": "lecciones-7f44d",
+    "storage_bucket": "lecciones-7f44d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12699066657:android:e776da7debc3e3c04a1e60",
+        "android_client_info": {
+          "package_name": "com.example.proto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIve_RkqP5In8V4EYD8vGEz6V44J_K__o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

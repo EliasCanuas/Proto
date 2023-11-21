@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Proto</string>
+    <string-array name="Peso">
+        <item>45 y 68 Kilos</item>
+        <item>50 y 74 Kilos</item>
+        <item>55 y 82 Kilos</item>
+        <item>60 y 90 Kilos</item>
+    </string-array>
+
+    <string-array name="Altura">
+        <item>1.50 y 1.59 metros</item>
+        <item>1.60 y 1.69 metros</item>
+        <item>1.70 y 1.79 metros</item>
+        <item>1.80 y 1.90 metros</item>
+    </string-array>
+</resources>
