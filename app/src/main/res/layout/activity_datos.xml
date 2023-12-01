@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activity_inicio"
-    android:background="@drawable/img_3">
+    android:background="@drawable/fondo_degradado3">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -135,23 +135,30 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="37dp">
+        android:layout_height="50dp">
 
         <Button
             android:id="@+id/Enviar"
-            android:layout_width="138dp"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:text="Enviar"
+            android:text="Enviar Datos"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:backgroundTint="@color/AzulCeleste"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"/>
     </RelativeLayout>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="match_parent"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
         android:text="Hacer ejercicio"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:backgroundTint="@color/AzulCeleste"
         android:onClick="ejercicio"/>
 
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activity_inicio"
-    android:background="@drawable/img">
+    android:background="@drawable/fondo_degradado">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -31,9 +31,12 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70pt"
+        android:layout_marginLeft="60pt"
         android:layout_marginTop="150pt"
         android:text="Bienvenido"
-        android:onClick="bienvenido"/>
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="bienvenido"
+        android:backgroundTint="@color/AzulCeleste"/>
         </LinearLayout>
 </LinearLayout>
