@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:textSize="42sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/AzulMarino"
         android:gravity="center"
         android:text="Bienvenido a este nuevo mundo, a continuación se te solicitarán algunos datos, pulsa Continuar para seguir con el proceso" />
     </LinearLayout>

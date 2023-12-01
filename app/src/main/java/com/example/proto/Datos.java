@@ -17,8 +17,6 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
     private int pesoSeleccionadoIndex = -1;
     private int alturaSeleccionadaIndex = -1;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +59,9 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
                     Toast.makeText(getApplicationContext(), "Estás en un peso óptimo, se sugiere aumentar tu masa muscular", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "No estás en buen peso, se sugiere ejercicio de cardio", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(Datos.this, dia.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -79,10 +80,5 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
     public void onNothingSelected(AdapterView<?> adapterView) {
     }
 
-    public void ejercicio(View view){
-        Intent intent = new Intent(view.getContext(), dia.class);
-        view.getContext().startActivity(intent);
-    }
 
 }
-
