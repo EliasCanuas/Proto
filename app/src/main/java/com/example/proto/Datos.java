@@ -24,6 +24,18 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
 
+        Spinner spinnerEdad = findViewById(R.id.Edad);
+        ArrayAdapter<CharSequence> adapterEdad = ArrayAdapter.createFromResource(this, R.array.Edad, android.R.layout.simple_spinner_item);
+        adapterEdad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerEdad.setAdapter(adapterEdad);
+        spinnerEdad.setOnItemSelectedListener(this);
+
+        Spinner spinnerGenero = findViewById(R.id.Genero);
+        ArrayAdapter<CharSequence> adapterGenero = ArrayAdapter.createFromResource(this, R.array.Genero, android.R.layout.simple_spinner_item);
+        adapterGenero.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerGenero.setAdapter(adapterGenero);
+        spinnerGenero.setOnItemSelectedListener(this);
+
         Spinner spinnerPeso = findViewById(R.id.Peso);
         ArrayAdapter<CharSequence> adapterPeso = ArrayAdapter.createFromResource(this, R.array.Peso, android.R.layout.simple_spinner_item);
         adapterPeso.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -46,9 +58,9 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
 
                 if (pesoSeleccionadoIndex != -1 && alturaSeleccionadaIndex != -1 &&
                         pesoSeleccionadoIndex == alturaSeleccionadaIndex) {
-                    Toast.makeText(getApplicationContext(), "Estás en un peso óptimo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Estás en un peso óptimo, se sugiere aumentar tu masa muscular", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "HORA DE EJERCITARSE", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "No estás en buen peso, se sugiere ejercicio de cardio", Toast.LENGTH_SHORT).show();
                 }
             }
         });

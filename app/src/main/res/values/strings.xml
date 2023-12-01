@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Proto</string>
+
+    <string-array name="Edad">
+        <item>15 a 17 años</item>
+        <item>30 a 44 años</item>
+        <item>45 a 59 años</item>
+        <item>Más de 60 años</item>
+    </string-array>
+
+    <string-array name="Genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
     <string-array name="Peso">
         <item>45 y 68 Kilos</item>
         <item>50 y 74 Kilos</item>
