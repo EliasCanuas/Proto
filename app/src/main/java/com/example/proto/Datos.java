@@ -57,6 +57,9 @@ public class Datos extends AppCompatActivity implements AdapterView.OnItemSelect
                 if (pesoSeleccionadoIndex != -1 && alturaSeleccionadaIndex != -1 &&
                         pesoSeleccionadoIndex == alturaSeleccionadaIndex) {
                     Toast.makeText(getApplicationContext(), "Estás en un peso óptimo, se sugiere aumentar tu masa muscular", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(Datos.this, masa.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "No estás en buen peso, se sugiere ejercicio de cardio", Toast.LENGTH_SHORT).show();
 

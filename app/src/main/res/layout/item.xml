@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrenamiento de cardio (bajar de peso)"
+        android:text="Entrenamiento para el aumento de masa muscular"
         android:textColor="@color/Azul"
         android:textSize="28dp"
         android:textStyle="bold"
@@ -39,7 +39,7 @@
             tools:ignore="ExtraText">
 
             <TextView
-                android:id="@+id/diatext"
+                android:id="@+id/Mdiatext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -49,10 +49,10 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tipotext"
+                android:id="@+id/Mtipotext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/diatext"
+                android:layout_below="@+id/Mdiatext"
                 android:layout_marginLeft="5dp"
                 android:text="Tipo"
                 android:textColor="#000"

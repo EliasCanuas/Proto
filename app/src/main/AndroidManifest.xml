@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Proto"
         tools:targetApi="31">
         <activity
+            android:name=".masa"
+            android:exported="false" />
+        <activity
             android:name=".Datos"
             android:exported="false" />
         <activity
