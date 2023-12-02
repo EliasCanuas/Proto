@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Proto</string>
+    <string name="app_name">Ejercitate en casa</string>
 
     <string-array name="Edad">
         <item>15 a 17 años</item>
+        <item>18 a 29 años</item>
         <item>30 a 44 años</item>
         <item>45 a 59 años</item>
         <item>Más de 60 años</item>
@@ -14,16 +15,16 @@
     </string-array>
 
     <string-array name="Peso">
-        <item>45 y 68 Kilos</item>
-        <item>50 y 74 Kilos</item>
-        <item>55 y 82 Kilos</item>
-        <item>60 y 90 Kilos</item>
+        <item>45 a 68 Kilos</item>
+        <item>50 a 74 Kilos</item>
+        <item>55 a 82 Kilos</item>
+        <item>60 a 90 Kilos</item>
     </string-array>
 
     <string-array name="Altura">
-        <item>1.50 y 1.59 metros</item>
-        <item>1.60 y 1.69 metros</item>
-        <item>1.70 y 1.79 metros</item>
-        <item>1.80 y 1.90 metros</item>
+        <item>1.50 a 1.59 metros</item>
+        <item>1.60 a 1.69 metros</item>
+        <item>1.70 a 1.79 metros</item>
+        <item>1.80 a 1.90 metros</item>
     </string-array>
 </resources>
