@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60pt"
-        android:layout_marginTop="100pt"
+        android:layout_marginTop="70pt"
         android:backgroundTint="@color/Azul"
         android:onClick="bienvenido"
         android:text="Inicio"
