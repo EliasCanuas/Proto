@@ -13,6 +13,7 @@ public class dia extends AppCompatActivity {
     RecyclerView recyclerView;
     MainAdapter mainAdapter;
 
+    // Inicia la interfaz y configura el RecyclerView para mostrar el contenido.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class dia extends AppCompatActivity {
         recyclerView = findViewById(R.id.rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // Configuración del adaptador para el RecyclerView con Firebase.
         FirebaseRecyclerOptions<MainModel> options =
                 new FirebaseRecyclerOptions.Builder<MainModel>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Sesiones"), MainModel.class)
@@ -30,6 +32,7 @@ public class dia extends AppCompatActivity {
         recyclerView.setAdapter(mainAdapter);
     }
 
+    // Inicia la escucha de la base de datos Firebase.
     @Override
     protected void onStart() {
         super.onStart();
@@ -42,3 +45,4 @@ public class dia extends AppCompatActivity {
         mainAdapter.stopListening();
     }
 }
+

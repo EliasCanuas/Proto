@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardCornerRadius="6dp"
     android:elevation="6dp"
-    app:cardUseCompatPadding="true"
-    app:cardBackgroundColor="#80B0C4E6">
+    app:cardBackgroundColor="#80B0C4E6"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
         android:text="Entrenamiento de cardio (bajar de peso)"
         android:textColor="@color/Azul"
         android:textSize="28dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="10dp" />
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,9 +27,9 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:elevation="6dp"
+        app:cardBackgroundColor="@color/AzulCeleste"
         app:cardCornerRadius="20dp"
-        app:cardUseCompatPadding="true"
-        app:cardBackgroundColor="@color/AzulCeleste">
+        app:cardUseCompatPadding="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -59,10 +58,10 @@
                 android:textSize="20sp" />
 
             <ImageView
+                android:id="@+id/imagen"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:layout_below="@+id/tipotext"
-                android:id="@+id/imagen"/>
+                android:layout_below="@+id/tipotext" />
 
         </RelativeLayout>
 

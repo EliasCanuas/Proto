@@ -14,6 +14,7 @@ public class masa extends AppCompatActivity {
     RecyclerView recyclerView;
     masaAdapter MasaAdapter;
 
+    // Inicia la interfaz y configura el RecyclerView para mostrar el contenido.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class masa extends AppCompatActivity {
         recyclerView = findViewById(R.id.rvm);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // Configuración del adaptador para el RecyclerView con Firebase.
         FirebaseRecyclerOptions<masaModel> options =
                 new FirebaseRecyclerOptions.Builder<masaModel>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Masa"), masaModel.class)
@@ -31,6 +33,7 @@ public class masa extends AppCompatActivity {
         recyclerView.setAdapter(MasaAdapter);
     }
 
+    // Inicia la escucha de la base de datos Firebase.
     @Override
     protected void onStart() {
         super.onStart();

@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado3"
     android:orientation="vertical"
-    tools:context=".Activity_inicio"
-    android:background="@drawable/fondo_degradado3">
+    tools:context=".Activity_inicio">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -32,18 +31,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="42sp"
+            android:text="Selecciona el rango de tus datos"
             android:textColor="@color/AzulMarino"
-            android:text="Selecciona el rango de tus datos" />
+            android:textSize="42sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,11 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Edad: "
             android:textAlignment="textEnd"
-            android:textSize="24dp"
-            android:textStyle="bold"
             android:textColor="@color/AzulMarino"
-            android:text="Edad: " />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/Edad"
@@ -80,18 +78,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Genero: "
             android:textAlignment="textEnd"
-            android:textSize="24dp"
-            android:textStyle="bold"
             android:textColor="@color/AzulMarino"
-            android:text="Genero: " />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/Genero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -105,11 +102,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Altura: "
             android:textAlignment="textEnd"
-            android:textSize="24dp"
-            android:textStyle="bold"
             android:textColor="@color/AzulMarino"
-            android:text="Altura: " />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/Altura"
@@ -128,11 +125,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Peso: "
             android:textAlignment="textEnd"
-            android:textSize="24dp"
-            android:textStyle="bold"
             android:textColor="@color/AzulMarino"
-            android:text="Peso: " />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/Peso"
@@ -150,12 +147,12 @@
             android:id="@+id/Enviar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Enviar datos y aplicar rutina"
-            android:textStyle="bold"
-            android:textSize="24dp"
-            android:backgroundTint="@color/Azul"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/Azul"
+            android:text="Enviar datos y aplicar rutina"
+            android:textSize="24dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -1,19 +1,24 @@
 package com.example.proto;
 
+// Representa el modelo de datos para cada elemento de la lista.
 public class masaModel {
 
+    // Propiedades de un elemento.
     String Dia, Tipo, IMG;
 
+    // Constructor vacío requerido para Firebase.
     masaModel() {
 
     }
 
+    // Constructor que inicializa un objeto MainModel con valores específicos.
     public masaModel(String dia, String tipo, String IMG) {
         Dia = dia;
         Tipo = tipo;
         this.IMG = IMG;
     }
 
+    // Métodos de acceso (getters y setters) para cada propiedad.
     public String getDia() {
         return Dia;
     }

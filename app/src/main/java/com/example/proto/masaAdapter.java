@@ -13,24 +13,26 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
+// Adaptador personalizado para el RecyclerView.
 public class masaAdapter extends FirebaseRecyclerAdapter<masaModel, masaAdapter.MyViewHolder> {
 
+    // Constructor del adaptador que recibe los datos de Firebase.
     public masaAdapter(@NonNull FirebaseRecyclerOptions<masaModel> options) {
         super(options);
     }
 
+    // Método para establecer los datos en cada elemento de la lista.
     @Override
     protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull masaModel model) {
+        // Establece el texto en los TextView correspondientes.
         holder.Dia.setText(model.getDia());
         holder.Tipo.setText(model.getTipo());
 
-        Glide.with(holder.imagen.getContext())
-                .load(model.getIMG())
-                .placeholder(com.google.firebase.database.R.drawable.common_google_signin_btn_icon_dark)
-                .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
-                .into(holder.imagen);
+        // Carga la imagen.
+        Glide.with(holder.imagen.getContext()).load(model.getIMG()).placeholder(com.google.firebase.database.R.drawable.common_google_signin_btn_icon_dark).error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal).into(holder.imagen);
     }
 
+    // Método llamado al crear un nuevo elemento de la lista.
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,10 +40,12 @@ public class masaAdapter extends FirebaseRecyclerAdapter<masaModel, masaAdapter.
         return new MyViewHolder(view);
     }
 
+    // Clase interna que representa cada elemento de la lista.
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView Dia, Tipo;
         ImageView imagen;
 
+        // Constructor que inicializa las vistas dentro del elemento de la lista.
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
