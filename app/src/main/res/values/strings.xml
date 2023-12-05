@@ -15,10 +15,10 @@
     </string-array>
 
     <string-array name="Peso">
-        <item>45 a 68 Kilos</item>
-        <item>50 a 74 Kilos</item>
-        <item>55 a 82 Kilos</item>
-        <item>60 a 90 Kilos</item>
+        <item>50 a 60 Kilos</item>
+        <item>61 a 70 Kilos</item>
+        <item>71 a 80 Kilos</item>
+        <item>81 a 90 Kilos</item>
     </string-array>
 
     <string-array name="Altura">
